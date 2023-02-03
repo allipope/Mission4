@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <!-- A website title & An icon for the website -->
+    <link rel="icon" href="img/smiley.png" />
+    <title>@ViewData["Title"]</title>
+    <!-- bootstrap and css sheets linked -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a asp-controller="Blah" asp-action="GradeCalculator">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+
+</body>
+
+</html>
