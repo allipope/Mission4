@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Mission4.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,12 +9,19 @@ namespace Mission4.Controllers
 {
     public class BlahController : Controller
     {
-        public IActionResult Index ()
+        public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult GradeCalculator ()
+        [HttpGet]
+        public IActionResult GradeCalculator()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult GradeCalculator(GradeCalculatorModel model)
         {
             return View();
         }

@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-
+@*this is the shared layout for each of my pages. It includes all my links to css, bootstrap, jquery, and js*@
 <html>
 
 <head>
@@ -9,12 +9,12 @@
     <link rel="icon" href="img/smiley.png" />
     <title>@ViewData["Title"]</title>
     <!-- bootstrap and css sheets linked -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/default.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/default.css" rel="stylesheet" />
 </head>
 
 <body>
-
+    @*this is the header with navigation to the other pages*@
     <nav>
         <a asp-controller="Blah" asp-action="Index">Home</a>
         <a asp-controller="Blah" asp-action="GradeCalculator">Grade Calculator</a>
@@ -25,9 +25,9 @@
     </div>
 
 
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
-
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="~/js/Form.js"></script>
 </body>
 
 </html>

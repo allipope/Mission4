@@ -19,5 +19,8 @@
     else { result = 'E' }
 
     // print the letter grade to the p tag in the form
-    $('#jsOutput').html(('Your overall grade is ' + grade + '% which is a(n) ' + result));
+    /* $('#jsOutput').html(('Your overall grade is ' + grade + '% which is a(n) ' + result));*/
+
+    // for mission 5, change it to an alert instead of having it printed on the page
+    alert("Your overall grade is " + grade + " which is a(n) " + result);
 })
